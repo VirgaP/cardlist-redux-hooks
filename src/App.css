@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main__title{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.list-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.card-wrapper{
+  width: 210px;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: teal;
+  text-align: center;
+}
+.card-wrapper img{
+border-radius: 14px;
+border: 4px solid #282c34;
+}
+
+.pending{
+  border: 3px solid lightskyblue;
+}
+
+.finished{
+  border: 3px solid maroon;
+}
+
+.draft{
+  border: 3px solid yellow;
+}
+
+.card-title{
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+.card-footer{
+  margin-top: 1rem;
+  text-align: right;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.draft .card-footer {
+  background: yellow;
+  color: black;
+  padding: .5rem
+}
+
+.finished .card-footer{
+  background: maroon;
+  padding: .5rem;
+}
+
+.pending .card-footer{
+  background: lightskyblue;
+  padding: .5rem;
+  color: black;
+}
